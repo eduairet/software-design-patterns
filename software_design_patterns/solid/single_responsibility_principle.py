@@ -1,23 +1,21 @@
 class Journal:
     """
-    A class used to represent a Journal.
+    A class to represent a journal that maintains a list of entries.
 
     Attributes
     ----------
     entries : list
-        a list to store journal entries
-    count : int
-        the number of entries in the journal
+        A list to store journal entries.
 
     Methods
     -------
-    add_entry(text: str)
+    count:
+        Returns the number of entries in the journal.
+    add_entry(text: str):
         Adds a new entry to the journal.
-
-    remove_entry(pos: int)
+    remove_entry(position: int = 0):
         Removes an entry from the journal at the specified position.
-
-    __str__()
+    __str__():
         Returns a string representation of the journal entries.
     """
 

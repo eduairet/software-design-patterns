@@ -21,18 +21,24 @@ class Journal:
         Returns a string representation of the journal entries.
     """
 
-    def __init__(self):
-        self.entries = []
-        self.count = len(self.entries)
+    def __init__(self, entries: list = []):
+        self.entries = entries
+
+    @property
+    def count(self):
+        return len(self.entries)
 
     def add_entry(self, text: str):
-        self.entries.append(f"{self.count}: {text}")
+        self.entries.append(text)
 
-    def remove_entry(self, pos: int):
-        del self.entries[pos]
+    def remove_entry(self, position: int = 0):
+        if position > self.count - 1:
+            raise ValueError("Invalid position.")
+        del self.entries[position]
 
     def __str__(self):
-        return "\n".join(self.entries)
+        format_entry = lambda entry: f"{entry[0]}: {entry[1]}"
+        return "\n".join(map(format_entry, enumerate(self.entries)))
 
 
 class PersistenceManager:

@@ -24,4 +24,4 @@ jobs:
       - name: Push the Docker image
         run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/software-design-patterns
       - name: Run the tests in the Docker image
-        run: docker run --rm -v $(pwd)/tests/files:/app/tests/files ${{ secrets.DOCKER_HUB_USERNAME }}/software-design-patterns pytest tests/
+        run: docker run --rm -v $(pwd)/tests/files:/app/tests/files ${{ secrets.DOCKER_HUB_USERNAME }}/software-design-patterns pytest tests/ -s -v

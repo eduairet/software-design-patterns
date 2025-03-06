@@ -4,7 +4,7 @@ class Journal:
 
     Attributes
     ----------
-    entries : list
+    entries : list[str]
         A list to store journal entries.
 
     Methods
@@ -19,7 +19,7 @@ class Journal:
         Returns a string representation of the journal entries.
     """
 
-    def __init__(self, entries: list = []):
+    def __init__(self, entries: list[str] = []):
         self.entries = entries
 
     @property

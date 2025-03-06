@@ -33,13 +33,17 @@ class TokenPriceApi:
     def __init__(self, api_url: str):
         self.api_url = api_url
 
-    def get_api_price_list_url(self, tokens: list, currencies: list = [Currency.USD]):
+    def get_api_price_list_url(
+        self, tokens: list[Token], currencies: list[Currency] = [Currency.USD]
+    ):
         """
         Get the API URL for the given tokens and currencies.
         """
         pass
 
-    def get_token_prices(self, tokens: list, currencies: list = [Currency.USD]):
+    def get_token_prices(
+        self, tokens: list[Token], currencies: list[Currency] = [Currency.USD]
+    ):
         """
         Get the prices of the given tokens in the given currencies.
         """
@@ -59,12 +63,16 @@ class CoinGeckoFreeApi(TokenPriceApi):
         super().__init__("https://api.coingecko.com/api/v3/simple/price")
         self.headers = {"accept": "application/json"}
 
-    def get_api_price_list_url(self, tokens: list, currencies: list = [Currency.USD]):
+    def get_api_price_list_url(
+        self, tokens: list[Token], currencies: list[Currency] = [Currency.USD]
+    ):
         tokens_ids = ",".join([token.value["id"] for token in tokens])
         currencies = ",".join([currency.value for currency in currencies])
         return f"{self.api_url}?ids={tokens_ids}&vs_currencies={currencies}"
 
-    def get_token_prices(self, tokens: list, currencies: list = [Currency.USD]):
+    def get_token_prices(
+        self, tokens: list[Token], currencies: list[Currency] = [Currency.USD]
+    ):
         api_price_list_url = self.get_api_price_list_url(tokens, currencies)
         response = requests.get(api_price_list_url, headers=self.headers)
         return response.json()

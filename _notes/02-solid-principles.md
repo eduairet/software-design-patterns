@@ -140,3 +140,50 @@
   for p in bf.filter(products, large_blue):
       print(f' - {p.name} is large and blue')
   ```
+
+## Liskov Substitution Principle (LSP)
+
+- Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+
+  ```py
+  class Rectangle:
+      def __init__(self, width, height):
+          self._width = width
+          self._height = height
+
+      @property
+      def width(self):
+          return self._width
+
+      @width.setter
+      def width(self, value):
+          self._width = value
+
+      @property
+      def height(self):
+          return self._height
+
+      @height.setter
+      def height(self, height):
+        self._height = height
+
+      @property
+      def area(self):
+          return self._width * self._height
+
+      def __str__(self):
+          return f"Width: {self.width} | Height: {self.height}"
+
+  # This class breaks the LSP because a square is a rectangle but the setters of the Rectangle class break the square properties.
+  class Square(Rectangle):
+      def __init__(self, size):
+          super().__init__(size, size)
+
+      @Rectangle.width.setter
+      def width(self, value):
+          self._width = self._height = value
+
+      @Rectangle.height.setter
+      def height(self, value):
+          self._width = self._height = value
+  ```

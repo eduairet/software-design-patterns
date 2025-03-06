@@ -2,6 +2,7 @@ import os
 from shared.constants.paths import TESTS_FILES_DIR
 from software_design_patterns.solid.single_responsibility_principle import *
 from software_design_patterns.solid.open_closed_principle import *
+from software_design_patterns.solid.liskov_substitution_principle import *
 
 
 def test_single_responsibility_principle():
@@ -89,3 +90,17 @@ def test_open_closed_principle():
     meme_spec = TokenTypeSpecification(TokenType.MEME)
     for token in token_filter.filter(tokens, meme_spec):
         assert token in [Token.PEPE, Token.WIF]
+
+
+def test_liskov_substitution_principle():
+    dog = Dog("Dog")
+    cat = Cat("Cat")
+    spider = Spider("Spider")
+
+    assert str(dog) == "Dog Dog says Woof"
+    assert str(cat) == "Cat Cat says Meow"
+
+    try:
+        print(spider)
+    except Exception as e:
+        assert str(e) == "Spiders don't make sounds"

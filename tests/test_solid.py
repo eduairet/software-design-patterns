@@ -58,12 +58,11 @@ def test_open_closed_principle():
     try:
         prices = api.get_token_prices(tokens, currencies)
     except Exception as e:
-        print(e)
+        pass
 
     if prices:
         for token in prices:
             for currency in prices[token]:
-                print(f"{token} price in {currency}: {prices[token][currency]}")
                 assert prices[token][currency] > 0
 
     token_filter = Filter()
@@ -102,7 +101,7 @@ def test_liskov_substitution_principle():
     assert str(cat) == "Cat Cat says Meow"
 
     try:
-        print(spider)
+        str(spider)
     except Exception as e:
         assert str(e) == "Spiders don't make sounds"
 
@@ -119,15 +118,12 @@ def test_interface_segregation_principle():
     RUGBY_EXPECTED = "Rugby with 7 players"
 
     swimming = Swimming(Location.OUTDOOR, SWIMMING_DISTANCE, SwimmingStyle.FREESTYLE)
-    print(swimming)
     assert str(swimming) == SWIMMING_EXPECTED
 
     running = Running(Location.OUTDOOR, RUNNING_DISTANCE)
-    print(running)
     assert str(running) == RUNNING_EXPECTED
 
     cycling = Cycling(Location.OUTDOOR, CYCLING_DISTANCE, BicycleType.ROAD)
-    print(cycling)
     assert str(cycling) == CYCLING_EXPECTED
 
     iron_man = Triathlon(
@@ -135,12 +131,10 @@ def test_interface_segregation_principle():
         TriathlonDistances(SWIMMING_DISTANCE, RUNNING_DISTANCE, CYCLING_DISTANCE),
         BicycleType.ROAD,
     )
-    print(iron_man)
     assert str(iron_man) == IRON_EXPECTED
     assert str(iron_man.swimming) == SWIMMING_EXPECTED
     assert str(iron_man.running) == RUNNING_EXPECTED
     assert str(iron_man.cycling) == CYCLING_EXPECTED
 
     rugby_sevens = Rugby(RugbyType.SEVENS)
-    print(rugby_sevens)
     assert str(rugby_sevens) == RUGBY_EXPECTED

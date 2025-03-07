@@ -3,6 +3,7 @@ from shared.constants.paths import TESTS_FILES_DIR
 from software_design_patterns.solid.single_responsibility_principle import *
 from software_design_patterns.solid.open_closed_principle import *
 from software_design_patterns.solid.liskov_substitution_principle import *
+from software_design_patterns.solid.interface_segregation_principle import *
 
 
 def test_single_responsibility_principle():
@@ -104,3 +105,42 @@ def test_liskov_substitution_principle():
         print(spider)
     except Exception as e:
         assert str(e) == "Spiders don't make sounds"
+
+
+def test_interface_segregation_principle():
+    SWIMMING_DISTANCE = 3800
+    RUNNING_DISTANCE = 42200
+    CYCLING_DISTANCE = 180000
+
+    SWIMMING_EXPECTED = f"Swimming Freestyle {SWIMMING_DISTANCE} meters"
+    RUNNING_EXPECTED = f"Running {RUNNING_DISTANCE} meters"
+    CYCLING_EXPECTED = f"Cycling Road {CYCLING_DISTANCE} meters"
+    IRON_EXPECTED = f"Iron Man with swimming {SWIMMING_DISTANCE} meters, running {RUNNING_DISTANCE} meters, and cycling {CYCLING_DISTANCE} meters"
+    RUGBY_EXPECTED = "Rugby with 7 players"
+
+    swimming = Swimming(Location.OUTDOOR, SWIMMING_DISTANCE, SwimmingStyle.FREESTYLE)
+    print(swimming)
+    assert str(swimming) == SWIMMING_EXPECTED
+
+    running = Running(Location.OUTDOOR, RUNNING_DISTANCE)
+    print(running)
+    assert str(running) == RUNNING_EXPECTED
+
+    cycling = Cycling(Location.OUTDOOR, CYCLING_DISTANCE, BicycleType.ROAD)
+    print(cycling)
+    assert str(cycling) == CYCLING_EXPECTED
+
+    iron_man = Triathlon(
+        "Iron Man",
+        TriathlonDistances(SWIMMING_DISTANCE, RUNNING_DISTANCE, CYCLING_DISTANCE),
+        BicycleType.ROAD,
+    )
+    print(iron_man)
+    assert str(iron_man) == IRON_EXPECTED
+    assert str(iron_man.swimming) == SWIMMING_EXPECTED
+    assert str(iron_man.running) == RUNNING_EXPECTED
+    assert str(iron_man.cycling) == CYCLING_EXPECTED
+
+    rugby_sevens = Rugby(RugbyType.SEVENS)
+    print(rugby_sevens)
+    assert str(rugby_sevens) == RUGBY_EXPECTED

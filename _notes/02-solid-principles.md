@@ -187,3 +187,76 @@
       def height(self, value):
           self._width = self._height = value
   ```
+
+## Interface Segregation Principle (ISP)
+
+- You don't want to stick too many methods in an interface.
+
+  ```py
+  # This class breaks the ISP because not all machines can fax or scan.
+  class Machine:
+      def print(self, document):
+          pass
+
+      def fax(self, document):
+          pass
+
+      def scan(self, document):
+          pass
+
+  # This interface is better because it's specific to the machines that can print, fax and scan.
+  class MultiFunctionPrinter(Machine):
+      def print(self, document):
+          pass
+
+      def fax(self, document):
+          pass
+
+      def scan(self, document):
+          pass
+
+  # This class breaks the ISP because old fashioned printers can't fax or scan.
+  class OldFashionedPrinter(Machine):
+      def print(self, document):
+          pass
+
+      def fax(self, document):
+          pass
+
+      def scan(self, document):
+          pass
+  ```
+
+- To solve this problem, we can use the Interface Segregation Principle.
+
+  ```py
+  class Printer:
+      @abstractmethod
+      def print(self, document):
+          pass
+
+  class Scanner:
+      @abstractmethod
+      def scan(self, document):
+          pass
+
+  class Fax:
+      @abstractmethod
+      def fax(self, document):
+          pass
+
+  class MultiFunctionDevice(Printer, Scanner, Fax):
+      def __init__(self):
+          self.printer = Printer()
+          self.scanner = Scanner()
+          self.fax = Fax()
+
+      def print(self, document):
+          self.printer.print(document)
+
+      def scan(self, document):
+          self.scanner.scan(document)
+
+      def fax(self, document):
+          self.fax.fax(document)
+  ```

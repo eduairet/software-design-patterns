@@ -13,6 +13,8 @@ Software Design Patterns notes and examples.
    1. [Single Responsibility Principle (SRP)](./software_design_patterns/solid/single_responsibility_principle.py)
    2. [Open/Closed Principle (OCP)](./software_design_patterns/solid/open_closed_principle.py)
    3. [Liskov Substitution Principle (LSP)](./software_design_patterns/solid/liskov_substitution_principle.py)
+   4. [Interface Segregation Principle (ISP)](./software_design_patterns/solid/interface_segregation_principle.py)
+   5. [Dependency Inversion Principle (DIP)](./software_design_patterns/solid/dependency_inversion_principle.py)
 
 ## References
 

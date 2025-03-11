@@ -4,6 +4,7 @@ from software_design_patterns.solid.single_responsibility_principle import *
 from software_design_patterns.solid.open_closed_principle import *
 from software_design_patterns.solid.liskov_substitution_principle import *
 from software_design_patterns.solid.interface_segregation_principle import *
+from software_design_patterns.solid.dependency_inversion_principle import *
 
 
 def test_single_responsibility_principle():
@@ -138,3 +139,31 @@ def test_interface_segregation_principle():
 
     rugby_sevens = Rugby(RugbyType.SEVENS)
     assert str(rugby_sevens) == RUGBY_EXPECTED
+
+
+def test_dependency_inversion_principle():
+    customer1 = Customer("John")
+    customer2 = Customer("Chris")
+    customer3 = Customer("Alice")
+    customer4 = Customer("Alice")
+
+    steak1 = Steak("Ribeye")
+    steak2 = Steak("T-bone")
+    steak3 = Steak("Sirloin")
+
+    order_book = OrderBook()
+    order_book.add_order(customer1, steak1, SteakDoneness.RARE)
+    order_book.add_order(customer2, steak2, SteakDoneness.MEDIUM)
+    order_book.add_order(customer3, steak3, SteakDoneness.WELL_DONE)
+    order_book.add_order(customer4, steak1, SteakDoneness.RARE)
+    assert len(order_book.orders) == 4
+
+    order_search = OrderSearch("Alice", order_book)
+    orders = order_search.order_book
+    assert len(orders) == 2
+    assert orders[0][0].name == "Alice"
+    assert orders[1][0].name == "Alice"
+    assert orders[0][1].name == "Sirloin"
+    assert orders[1][1].name == "Ribeye"
+    assert orders[0][2] == SteakDoneness.WELL_DONE
+    assert orders[1][2] == SteakDoneness.RARE

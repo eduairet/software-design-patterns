@@ -6,6 +6,8 @@ Software Design Patterns notes and examples.
 
 1. [Introduction](./_notes/01-introduction.md)
 2. [SOLID Design Principles](./_notes/02-solid-principles.md)
+3. Creational Patterns
+   1. [Builder Pattern](./_notes/03-builder-pattern.md)
 
 ## Examples
 
@@ -15,6 +17,8 @@ Software Design Patterns notes and examples.
    3. [Liskov Substitution Principle (LSP)](./software_design_patterns/solid/liskov_substitution_principle.py)
    4. [Interface Segregation Principle (ISP)](./software_design_patterns/solid/interface_segregation_principle.py)
    5. [Dependency Inversion Principle (DIP)](./software_design_patterns/solid/dependency_inversion_principle.py)
+2. [Creational Pattern](./software_design_patterns/creational/)
+   1. [Builder Pattern](./software_design_patterns/creational/builder_pattern.py)
 
 ## References
 

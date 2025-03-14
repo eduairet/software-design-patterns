@@ -19,9 +19,11 @@ The SOLID principles are five principles of object-oriented programming intended
 
 ## Types of Design Patterns
 
-- **Creational Patterns**: These design patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by controlling the object creation process.
-- **Structural Patterns**: These design patterns deal with object composition. They describe how classes and objects can be composed to form larger structures. Structural design patterns simplify the structure by identifying the relationships.
-- **Behavioral Patterns**: These design patterns deal with object collaboration. They describe how objects interact to fulfill a task. Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
+- Gamma categorization is a way to group design patterns based on their intent or purpose, the three categories are:
+
+  - **Creational Patterns**: These design patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or added complexity to the design. Creational design patterns solve this problem by controlling the object creation process.
+  - **Structural Patterns**: These design patterns deal with object composition. They describe how classes and objects can be composed to form larger structures. Structural design patterns simplify the structure by identifying the relationships.
+  - **Behavioral Patterns**: These design patterns deal with object collaboration. They describe how objects interact to fulfill a task. Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
 ## References
 

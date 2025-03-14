@@ -29,4 +29,4 @@ jobs:
       - name: Push the Docker image
         run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/software-design-patterns
       - name: Run the tests in the Docker image
-        run: docker-compose up --rm tests
+        run: docker-compose run --rm tests

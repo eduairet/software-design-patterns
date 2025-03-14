@@ -1,6 +1,6 @@
 services:
   tests:
-    image: $${{ secrets.DOCKER_HUB_USERNAME }}/software-design-patterns
+    image: ${DOCKER_HUB_USERNAME}/software-design-patterns:latest
     volumes:
       - ./tests/files:/app/tests/files
     command: pytest tests/ -s -v

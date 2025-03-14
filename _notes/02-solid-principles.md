@@ -319,3 +319,11 @@
   ```
 
 - In this example, the Research class is a high-level module and the Relationships class is a low-level module. The Research class should not depend on the Relationships class directly. Instead, it should depend on an abstraction that the Relationships class implements. In this case, the RelationshipBrowser class is the abstraction that the Relationships class implements.
+
+## Sumary
+
+- **Single Responsibility Principle (SRP):** A class should have only one reason to change or a class should have only one responsibility.
+- **Open/Closed Principle (OCP):** A class should be open for extension but closed for modification.
+- **Liskov Substitution Principle (LSP):** Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+- **Interface Segregation Principle (ISP):** You don't want to stick too many methods in an interface.
+- **Dependency Inversion Principle (DIP):** High-level modules should not depend on low-level modules. Both should depend on abstractions.

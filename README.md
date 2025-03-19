@@ -8,6 +8,7 @@ Software Design Patterns notes and examples.
 2. [SOLID Design Principles](./_notes/02-solid-principles.md)
 3. Creational Patterns
    1. [Builder Pattern](./_notes/03-builder-pattern.md)
+   2. [Factory Pattern](./_notes/04-factory-pattern.md)
 
 ## Examples
 
@@ -19,6 +20,7 @@ Software Design Patterns notes and examples.
    5. [Dependency Inversion Principle (DIP)](./software_design_patterns/solid/dependency_inversion_principle.py)
 2. [Creational Patterns](./software_design_patterns/creational/)
    1. [Builder Pattern](./software_design_patterns/creational/builder_pattern.py)
+   2. [Factory Pattern](./software_design_patterns/creational/factory_pattern.py)
 
 ## References
 

@@ -64,10 +64,10 @@ class Pizzeria:
             ]
 
     def make_pizza(self):
-        print(
+        dough_index = input(
             f"Select the pizza factory: {', '.join([factory.__class__.__name__ for factory in self.factories])}\n"
         )
-        index = int(input()) - 1
+        index = int(dough_index) - 1
 
         size = input(
             f"Select pizza size: ({', '.join([size.name for size in PizzaSize])})\n"

@@ -64,10 +64,10 @@ class Pizzeria:
             ]
 
     def make_pizza(self):
-        dough_index = input(
+        factory_index = input(
             f"Select the pizza factory: {', '.join([factory.__class__.__name__ for factory in self.factories])}\n"
         )
-        index = int(dough_index) - 1
+        factory_index = int(factory_index) - 1
 
         size = input(
             f"Select pizza size: ({', '.join([size.name for size in PizzaSize])})\n"
@@ -77,4 +77,4 @@ class Pizzeria:
         toppings = input("Enter toppings separated by comma:\n")
         toppings = toppings.split(", ")
 
-        return self.factories[index].prepare(size, toppings)
+        return self.factories[factory_index].prepare(size, toppings)

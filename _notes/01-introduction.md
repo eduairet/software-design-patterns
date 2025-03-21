@@ -16,6 +16,7 @@ The SOLID principles are five principles of object-oriented programming intended
 - **Open/Closed Principle (OCP)**: Software entities should be open for extension but closed for modification.
 - **Liskov Substitution Principle (LSP)**: Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
 - **Interface Segregation Principle (ISP)**: A client should never be forced to implement an interface that it doesn't use, or clients shouldn't be forced to depend on interfaces they do not use.
+- **Dependency Inversion Principle (DIP)**: High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
 ## Types of Design Patterns
 

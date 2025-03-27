@@ -11,6 +11,8 @@ Software Design Patterns notes and examples.
    2. [Factory Pattern](./_notes/04-factory-pattern.md)
    3. [Prototype Pattern](./_notes/05-prototype-pattern.md)
    4. [Singleton Pattern](./_notes/06-singleton-pattern.md)
+4. Structural Patterns
+   1. [Adapter Pattern](./_notes/07-adapter-pattern.md)
 
 ## Examples
 
@@ -25,6 +27,8 @@ Software Design Patterns notes and examples.
    2. [Factory Pattern](./software_design_patterns/creational/factory_pattern.py)
    3. [Prototype Pattern](./software_design_patterns/creational/prototype_pattern.py)
    4. [Singleton Pattern](./software_design_patterns/creational/singleton_pattern.py)
+3. [Structural Patterns](./software_design_patterns/structural/)
+   1. [Adapter Pattern](./software_design_patterns/structural/adapter_pattern.py)
 
 ## References
 

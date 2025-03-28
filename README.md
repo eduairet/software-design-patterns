@@ -13,6 +13,7 @@ Software Design Patterns notes and examples.
    4. [Singleton Pattern](./_notes/06-singleton-pattern.md)
 4. Structural Patterns
    1. [Adapter Pattern](./_notes/07-adapter-pattern.md)
+   2. [Bridge Pattern](./_notes/08-bridge-pattern.md)
 
 ## Examples
 
@@ -29,6 +30,7 @@ Software Design Patterns notes and examples.
    4. [Singleton Pattern](./software_design_patterns/creational/singleton_pattern.py)
 3. [Structural Patterns](./software_design_patterns/structural/)
    1. [Adapter Pattern](./software_design_patterns/structural/adapter_pattern.py)
+   2. [Bridge Pattern](./software_design_patterns/structural/bridge_pattern.py)
 
 ## References
 

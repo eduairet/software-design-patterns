@@ -41,13 +41,11 @@ class ThickCrustPizza(Pizza):
 
 class ThinCrustPizzaFactory:
     def prepare(self, size: PizzaSize, toppings: list[str]):
-        print(f"Prepare {size.name} thin crust pizza")
         return ThinCrustPizza(Dough.THIN, size, toppings)
 
 
 class ThickCrustPizzaFactory:
     def prepare(self, size: PizzaSize, toppings: list[str]):
-        print(f"Prepare {size.name} thick crust pizza")
         return ThickCrustPizza(Dough.THICK, size, toppings)
 
 

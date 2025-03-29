@@ -30,8 +30,3 @@ class Cat(Pet):
 class Spider(Pet):
     def make_sound(self) -> str:
         raise Exception("Spiders don't make sounds")
-
-
-def make_pets_sound(pets: list[Pet]) -> None:
-    for pet in pets:
-        print(pet)

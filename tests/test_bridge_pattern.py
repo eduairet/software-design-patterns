@@ -7,8 +7,8 @@ def test_bridge_taco():
         "Grilling asada taco then add chiles toreados, cebolla rostizada."
     )
 
-    taco = TacoCarnitas().add_toppings("cilantro", "guacamole")
+    taco = CarnitasTaco().add_toppings("cilantro", "guacamole")
     assert str(taco) == TACO_CARNITAS_EXPECTED
 
-    taco = TacoAsada().add_toppings("chiles toreados", "cebolla rostizada")
+    taco = AsadaTaco().add_toppings("chiles toreados", "cebolla rostizada")
     assert str(taco) == TACO_ASADA_EXPECTED

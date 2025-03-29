@@ -8,14 +8,16 @@ class Cooker(ABC):
         pass
 
 
-class CookerFried(Cooker):
+class FriedCooker(Cooker):
     def cook(self, taco: "Taco") -> str:
-        return f"Frying {taco.name} taco{f' then add {taco.toppings_str}' if taco.toppings else ''}."
+        toppings = f" then add {taco.toppings_str}" if taco.toppings else ""
+        return f"Frying {taco.name} taco{toppings}."
 
 
-class CookerGrilled(Cooker):
+class GrilledCooker(Cooker):
     def cook(self, taco: "Taco") -> str:
-        return f"Grilling {taco.name} taco{f' then add {taco.toppings_str}' if taco.toppings else ''}."
+        toppings = f" then add {taco.toppings_str}" if taco.toppings else ""
+        return f"Grilling {taco.name} taco{toppings}."
 
 
 class Taco(ABC):
@@ -36,11 +38,11 @@ class Taco(ABC):
         return self.cooker.cook(self)
 
 
-class TacoCarnitas(Taco):
+class CarnitasTaco(Taco):
     def __init__(self):
-        super().__init__("carnitas", CookerFried())
+        super().__init__("carnitas", FriedCooker())
 
 
-class TacoAsada(Taco):
+class AsadaTaco(Taco):
     def __init__(self):
-        super().__init__("asada", CookerGrilled())
+        super().__init__("asada", GrilledCooker())

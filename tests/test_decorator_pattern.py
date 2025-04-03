@@ -8,6 +8,7 @@ def test_decorator_api_request():
     method = RequestMethod.GET
     api_request = ApiRequest(ENDPOINT, data, method)
     logged_request = LoggerDecorator(api_request)
+    print("\n")
     response = logged_request.send()
 
     assert response.status_code == 200

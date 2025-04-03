@@ -15,6 +15,7 @@ Software Design Patterns notes and examples.
    1. [Adapter Pattern](./_notes/07-adapter-pattern.md)
    2. [Bridge Pattern](./_notes/08-bridge-pattern.md)
    3. [Composite Pattern](./_notes/09-composite-pattern.md)
+   4. [Decorator Pattern](./_notes/10-decorator-pattern.md)
 
 ## Examples
 
@@ -33,6 +34,7 @@ Software Design Patterns notes and examples.
    1. [Adapter Pattern](./software_design_patterns/structural/adapter_pattern.py)
    2. [Bridge Pattern](./software_design_patterns/structural/bridge_pattern.py)
    3. [Composite Pattern](./software_design_patterns/structural/composite_pattern.py)
+   4. [Decorator Pattern](./software_design_patterns/structural/decorator_pattern.py)
 
 ## References
 

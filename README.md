@@ -18,6 +18,7 @@ Software Design Patterns notes and examples.
    4. [Decorator Pattern](./_notes/10-decorator-pattern.md)
    5. [Façade Pattern](./_notes/11-facade-pattern.md)
    6. [Flyweight Pattern](./_notes/12-flyweight-pattern.md)
+   7. [Proxy Pattern](./_notes/13-proxy-pattern.md)
 
 ## Examples
 
@@ -39,6 +40,7 @@ Software Design Patterns notes and examples.
    4. [Decorator Pattern](./software_design_patterns/structural/decorator_pattern.py)
    5. [Façade Pattern](./software_design_patterns/structural/facade_pattern.py)
    6. [Flyweight Pattern](./software_design_patterns/structural/flyweight_pattern.py)
+   7. [Proxy Pattern](./software_design_patterns/structural/proxy_pattern.py)
 
 ## References
 

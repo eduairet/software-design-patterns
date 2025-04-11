@@ -19,6 +19,8 @@ Software Design Patterns notes and examples.
    5. [Façade Pattern](./_notes/11-facade-pattern.md)
    6. [Flyweight Pattern](./_notes/12-flyweight-pattern.md)
    7. [Proxy Pattern](./_notes/13-proxy-pattern.md)
+5. Behavioral Patterns
+   1. [Chain of Responsibility Pattern](./_notes/14-chain-of-responsibility-pattern.md)
 
 ## Examples
 
@@ -41,6 +43,8 @@ Software Design Patterns notes and examples.
    5. [Façade Pattern](./software_design_patterns/structural/facade_pattern.py)
    6. [Flyweight Pattern](./software_design_patterns/structural/flyweight_pattern.py)
    7. [Proxy Pattern](./software_design_patterns/structural/proxy_pattern.py)
+4. [Behavioral Patterns](./software_design_patterns/behavioral/)
+   1. [Chain of Responsibility Pattern](./software_design_patterns/behavioral/chain_of_responsibility_pattern.py)
 
 ## References
 

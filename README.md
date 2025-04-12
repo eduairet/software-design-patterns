@@ -21,6 +21,7 @@ Software Design Patterns notes and examples.
    7. [Proxy Pattern](./_notes/13-proxy-pattern.md)
 5. Behavioral Patterns
    1. [Chain of Responsibility Pattern](./_notes/14-chain-of-responsibility-pattern.md)
+   2. [Command Pattern](./_notes/15-command-pattern.md)
 
 ## Examples
 
@@ -45,6 +46,7 @@ Software Design Patterns notes and examples.
    7. [Proxy Pattern](./software_design_patterns/structural/proxy_pattern.py)
 4. [Behavioral Patterns](./software_design_patterns/behavioral/)
    1. [Chain of Responsibility Pattern](./software_design_patterns/behavioral/chain_of_responsibility_pattern.py)
+   2. [Command Pattern](./software_design_patterns/behavioral/command_pattern.py)
 
 ## References
 

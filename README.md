@@ -23,6 +23,7 @@ Software Design Patterns notes and examples.
    1. [Chain of Responsibility Pattern](./_notes/14-chain-of-responsibility-pattern.md)
    2. [Command Pattern](./_notes/15-command-pattern.md)
    3. [Interpreter Pattern](./_notes/16-interpreter-pattern.md)
+   4. [Iterator Pattern](./_notes/17-iterator-pattern.md)
 
 ## Examples
 
@@ -49,6 +50,7 @@ Software Design Patterns notes and examples.
    1. [Chain of Responsibility Pattern](./software_design_patterns/behavioral/chain_of_responsibility_pattern.py)
    2. [Command Pattern](./software_design_patterns/behavioral/command_pattern.py)
    3. [Interpreter Pattern](./software_design_patterns/behavioral/interpreter_pattern.py)
+   4. [Iterator Pattern](./software_design_patterns/behavioral/iterator_pattern.py)
 
 ## References
 

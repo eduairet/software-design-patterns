@@ -26,6 +26,7 @@ Software Design Patterns notes and examples.
    4. [Iterator Pattern](./_notes/17-iterator-pattern.md)
    5. [Mediator Pattern](./_notes/18-mediator-pattern.md)
    6. [Memento Pattern](./_notes/19-memento-pattern.md)
+   7. [Observer Pattern](./_notes/20-observer-pattern.md)
 
 ## Examples
 
@@ -55,6 +56,7 @@ Software Design Patterns notes and examples.
    4. [Iterator Pattern](./software_design_patterns/behavioral/iterator_pattern.py)
    5. [Mediator Pattern](./software_design_patterns/behavioral/mediator_pattern.py)
    6. [Memento Pattern](./software_design_patterns/behavioral/memento_pattern.py)
+   7. [Observer Pattern](./software_design_patterns/behavioral/observer_pattern.py)
 
 ## References
 

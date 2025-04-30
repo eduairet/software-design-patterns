@@ -28,6 +28,7 @@ Software Design Patterns notes and examples.
    6. [Memento Pattern](./_notes/19-memento-pattern.md)
    7. [Observer Pattern](./_notes/20-observer-pattern.md)
    8. [State Pattern](./_notes/21-state-pattern.md)
+   9. [Strategy Pattern](./_notes/22-strategy-pattern.md)
 
 ## Examples
 
@@ -59,6 +60,7 @@ Software Design Patterns notes and examples.
    6. [Memento Pattern](./software_design_patterns/behavioral/memento_pattern.py)
    7. [Observer Pattern](./software_design_patterns/behavioral/observer_pattern.py)
    8. [State Pattern](./software_design_patterns/behavioral/state_pattern.py)
+   9. [Strategy Pattern](./software_design_patterns/behavioral/strategy_pattern.py)
 
 ## References
 

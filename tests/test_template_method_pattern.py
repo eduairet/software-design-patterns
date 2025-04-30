@@ -1,0 +1,1 @@
+from software_design_patterns.behavioral.template_method_pattern import *

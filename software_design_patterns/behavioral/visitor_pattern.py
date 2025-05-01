@@ -1,4 +1,4 @@
-from shared.lib.visitor import visitor
+from shared.utils.visitor import visitor
 
 UNKNOWN_EXPRESSION = "Unknown expression type"
 

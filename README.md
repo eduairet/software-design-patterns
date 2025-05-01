@@ -30,6 +30,7 @@ Software Design Patterns notes and examples.
    8. [State Pattern](./_notes/21-state-pattern.md)
    9. [Strategy Pattern](./_notes/22-strategy-pattern.md)
    10. [Template Method Pattern](./_notes/23-template-method-pattern.md)
+   11. [Visitor Pattern](./_notes/24-visitor-pattern.md)
 
 ## Examples
 
@@ -63,6 +64,7 @@ Software Design Patterns notes and examples.
    8. [State Pattern](./software_design_patterns/behavioral/state_pattern.py)
    9. [Strategy Pattern](./software_design_patterns/behavioral/strategy_pattern.py)
    10. [Template Method Pattern](./software_design_patterns/behavioral/template_method_pattern.py)
+   11. [Visitor Pattern](./software_design_patterns/behavioral/visitor_pattern.py)
 
 ## References
 

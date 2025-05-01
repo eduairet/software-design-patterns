@@ -167,7 +167,7 @@
           return "".join(self.buffer)
 
 
-  class ExpressionEvaluator:  # This is a more Pythonic way of doing it without the accept method
+  class ExpressionEvaluator:  # This is a more Pythonic way of doing it without the accept method and using a decorator
       def __init__(self):
           self.value = None
 
